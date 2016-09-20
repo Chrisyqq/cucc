@@ -242,6 +242,7 @@ html,body{-webkit-text-size-adjust:none;}
         border: none;
         line-height: 24px;
         margin-top: 2px;
+        letter-spacing: 2px;
     }
     .histogram-flow-nei {
         width: 340px;
@@ -453,68 +454,123 @@ html,body{-webkit-text-size-adjust:none;}
     .flow-line-chart {
         position: relative;
         width: 1116px;
-        background: #ffffff;
         margin-top: 20px;
         margin-bottom: 100px;
         margin-left: 11px;
         color: #4f6072;
         min-height: 300px;
     }
-    .flow-line-tishi{
-        display: none;
-        position: absolute;
-        left: 780px;
-        top: 50px;
-        width: 320px;
-        height: 200px;
+    .flow-line-chart .left{
+      width: 200px;
+      min-height: 300px;
+      background: #ffffff;
+      float: left;
     }
-    .flow-line-tishiyc{
+    .flow-line-chart .left .consume-situation-head{
+        width: 95%;
+        margin: 0 auto 0 auto;
+        height: 40px;
+        line-height: 40px;
+        text-align: left;
+        font-size: 20px;
+        color: #000000;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .flow-line-chart .left .consume-situation-bill-check{
+        width: 95%;
+        margin: 0 auto 0 auto;
+        height: 120px;
+        color: #2ab6f1;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .bill-check-head{
+        margin: 0 auto 0 auto;
+        height: 30px;
+        font-size: 20px;
+        color: #2ab6f1;
+    }
+    .bill-check-list{
+        margin: 0 auto 0 auto;
+        height: 60px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 20px;
+        color: #2ab6f1;
+    }
+    .bill-check-list p{
+        line-height: 20px !important;
+        height: 20px;
+    }
+    .flow-line-chart .right{
+        width: 896px;
+        min-height: 300px;
+        margin-left: 20px;
+        float: left;
+    }
+
+    .flow-line-chart .yewu-list{
+        width: 896px;
+        height: 30px;
+        line-height: 30px;
+        background: #ffffff;
+        margin-bottom: 10px;
+        float: left;
+    }
+    .flow-line-chart .yewu-detail{
+        width: 896px;
+        min-height: 100px;
+        background: #ffffff;
+        margin-bottom: 10px;
+        float: left;
+    }
+    .yewu-detail .yewu-detail-head{
+        width: 896px;
+        height: 30px;
+        line-height: 30px;
+        background: #ffffff;
+        border-top: 1px solid #c7c8c8;
+        padding-left: 20px;
+        border-left: 1px solid #c7c8c8;
+        border-right: 1px solid #c7c8c8;
+    }
+    .yewu-detail .table{
+        margin-bottom: 0 !important;
+    }
+
+    .flow-line-chart .yewu-tanhao{
         width: 20px;
         height: 20px;
-        font-size: 1.6em;
-        cursor: pointer;
-        position: absolute;
-        top: -20px;
-        right: 10px;
+        margin-top: 5px;
+        margin-left: 5px;
+        background: url("../img/bluetan.png") no-repeat center;
+        background-size: 100%;
+        float: left;
     }
-    .flow-line-tishione{
-        font-size: 1.2em;
-        width: 320px;
-        line-height: 18px;
-        letter-spacing: 2px;
-        margin-bottom: 10px;
+    .flow-line-chart .yewu-word{
+        width: auto;
+        height: 30px;
+        line-height: 30px;
+        float: left;
+        margin-left: 10px;
+        font-size: 16px;
     }
-    .flow-line-tishione::before{
-        content: '';
-        position: absolute;
-        top: 4px;
-        left: -14px;
-        width: 10px;
-        height: 10px;
-        border-radius: 10px;
-        background: #f99d16;
+    .down .yewu-turn{
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+        background: url("../img/jianxia.png") no-repeat center;
+        background-size: 100%;
+        float: right;
+        margin-right: 10px;
     }
-    .flow-line-tishitwo{
-        position: relative;
-        font-size: 1.2em;
-        width: 320px;
-        line-height: 18px;
-        letter-spacing: 2px;
-        margin-bottom: 10px;
-    }
-    .flow-line-tishitwo::before{
-        content: '';
-        position: absolute;
-        top: 4px;
-        left: -14px;
-        width: 10px;
-        height: 10px;
-        border-radius: 10px;
-        background: #f99d16;
-    }
-    .flow-line-tishione a{
-        cursor: pointer;
-        color: #f99d16;
+    .up .yewu-turn{
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+        background: url("../img/jianshang.png") no-repeat center;
+        background-size: 100%;
+        float: right;
+        margin-right: 10px;
     }
 
     /*timeline*/
