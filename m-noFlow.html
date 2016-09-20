@@ -4,16 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/flowindex.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
     <script src="js/flowindex.js"></script>
-    <!-- echarts -->
-    <script src="js/echarts-all.js"></script>
-
-    <!-- echarts demo data-->
-    <script src="js/echarts-demo.js"></script>
     <title>流量诊断</title>
 </head>
 <body>
@@ -31,139 +24,53 @@
             </div>
         </form>
     </div>
-    <div></div>
-    <div class="row traffic-usage">
-        <div class="traffic-usage-qian">
-            <div class="cucc-circle">
-                <div class="cucc-circle-icon"></div>
-            </div>
-            <span>流量使用情况</span>
-            <select class="form-control mouth-cucc">
-                <option>1月</option>
-                <option>2月</option>
-                <option>3月</option>
-                <option>4月</option>
-                <option selected>5月</option>
-                <option>6月</option>
-                <option>7月</option>
-                <option>8月</option>
-                <option>9月</option>
-                <option>10月</option>
-                <option>11月</option>
-                <option>12月</option>
-            </select>
-            <div class="traffic-usage-handle" id="chutiyan"><img src=""><a id="flow-banli">流量办理</a></div>
-        </div>
-
-    </div>
 
     <div class="histogram-flow">
-        <div class="histogram-flow-nei">
-            <div class="histogram-flow-neic" id="zhuone">
-                <p class="histogram-flow-neicf">2.8G</p>
-                <p class="histogram-flow-neicm">3月</p>
+        <div class="row traffic-usage">
+            <div class="traffic-usage-qian">
+                <div class="cucc-circle">
+                    <div class="cucc-circle-icon"></div>
+                </div>
+                <span>当前的号码信息</span>
             </div>
-            <div class="histogram-flow-neim" id="zhutwo">
-                <p class="histogram-flow-neicf">2.8G</p>
-                <p class="histogram-flow-neicm">4月</p>
+        </div>
+        <div class="histogram-flow-box">
+            <div class="histogram-flow-box-head">
+                <div class="person-name">尊敬的白**,您好!</div>
+                <div class="person-vip">您是我公司尊贵的<span>五</span>星用户</div>
+                <div class="person-star">
+                    <div class="person-star-box light"></div>
+                    <div class="person-star-box light"></div>
+                    <div class="person-star-box light"></div>
+                    <div class="person-star-box light"></div>
+                    <div class="person-star-box light"></div>
+                    <div class="person-star-box dark"></div>
+                </div>
             </div>
-            <div class="histogram-flow-neic" id="zhuthree">
-                <p class="histogram-flow-neicf">2.8G</p>
-                <p class="histogram-flow-neicm">5月</p>
+            <div class="histogram-flow-box-zhanghao">
+                <div class="phone-number">
+                    <div class="phone"></div>
+                    <div class="number">153****1111<span>[切换]</span></div>
+                </div>
+                <div class="phone-number-state">账户欠费:<span>8.00元</span><button>充值</button></div>
+                <div class="phone-number-state">当前号码状态:<span>停机</span><button>充值</button></div>
             </div>
         </div>
     </div>
 
     <div class="row traffic-usage-count" id="timouth">
-        <div class="count">
-            <div class="count-one">5月国内手机上网流量</div>
-            <div class="count-two">已用<span>1.7G</span>/3.4GB <i class="fa fa-chevron-circle-up"
-                                                                id="count-touch-one"></i></div>
-        </div>
-        <div class="count-list" id="count-list-one">
-            <div class="count-list-progress">
-                <div class="progress-one">5月国内手机上网流量</div>
-                <div class="progress-two">已用<span>1.7G</span>/3.4GB</div>
-            </div>
-            <div style="clear: both;"></div>
-            <div class="progress">
-                <div class="failed-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                     style="width: 60%; height: 20px;">
-                    <span class="sr-only">60% Complete</span>
+        <div class="row traffic-usage">
+            <div class="traffic-usage-qian">
+                <div class="cucc-circle">
+                    <div class="cucc-circle-icon"></div>
                 </div>
+                <span>近6个月的消费趋势</span>
+                <div class="traffic-usage-handle" id="chutiyan"><img src=""><a id="flow-banli">详单</a></div>
             </div>
-            <div class="count-list-progress">
-                <div class="progress-one">5月国内手机上网流量</div>
-                <div class="progress-two">已用<span>1.7G</span>/3.4GB</div>
-            </div>
-            <div style="clear: both;"></div>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                     style="width: 60%; height: 20px;">
-                    <span class="sr-only">60% Complete</span>
-                </div>
-            </div>
-        </div>
-        <div class="count">
-            <div class="count-one">5月省内手机上网流量</div>
-            <div class="count-two">已用<span>1.7G</span>/3.4GB <i class="fa fa-chevron-circle-down"
-                                                                id="count-touch-two"></i></div>
-        </div>
-        <div class="count-list" id="count-list-two">
-            <div class="count-list-progress">
-                <div class="progress-one">5月国内手机上网流量</div>
-                <div class="progress-two">已用<span>1.7G</span>/3.4GB</div>
-            </div>
-            <div style="clear: both;"></div>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                     style="width: 60%; height: 20px;">
-                    <span class="sr-only">60% Complete</span>
-                </div>
-            </div>
-            <div class="count-list-progress">
-                <div class="progress-one">5月国内手机上网流量</div>
-                <div class="progress-two">已用<span>1.7G</span>/3.4GB</div>
-            </div>
-            <div style="clear: both;"></div>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                     style="width: 60%; height: 20px;">
-                    <span class="sr-only">60% Complete</span>
-                </div>
-            </div>
-        </div>
-        <div class="count">
-            <div class="count-one">5月本地手机上网流量</div>
-            <div class="count-two">已用<span>1.7G</span>/3.4GB <i class="fa fa-chevron-circle-down"
-                                                                id="count-touch-three"></i></div>
-        </div>
-        <div class="count-list" id="count-list-three">
-            <div class="count-list-progress">
-                <div class="progress-one">5月国内手机上网流量</div>
-                <div class="progress-two">已用<span>1.7G</span>/3.4GB</div>
-            </div>
-            <div style="clear: both;"></div>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                     style="width: 60%; height: 20px;">
-                    <span class="sr-only">60% Complete</span>
-                </div>
-            </div>
-            <div class="count-list-progress">
-                <div class="progress-one">5月国内手机上网流量</div>
-                <div class="progress-two">已用<span>1.7G</span>/3.4GB</div>
-            </div>
-            <div style="clear: both;"></div>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                     style="width: 60%; height: 20px;">
-                    <span class="sr-only">60% Complete</span>
-                </div>
-            </div>
-        </div>
-        <div style="clear: both;"></div>
+            <div class="traffic-usage-count-box">
 
+            </div>
+        </div>
     </div>
     <div style="clear: both"></div>
     <div class="row flow-timeline">
@@ -171,80 +78,18 @@
             <div class="cucc-circle">
                 <div class="cucc-circle-icon"></div>
             </div>
-            <span>流量时光轴</span>
-            <div class="traffic-usage-handle"><i class="fa fa-question-circle"></i><a href="#">上网详情</a></div>
+            <span>温馨提示</span>
+            <div class="traffic-usage-handle"><a href="#"></a></div>
         </div>
     </div>
-    <div class="row cucc-noflow">
-        <div class="text-center float-e-marginsflow p-md">
-            <span>您好，您的套餐不包含免费流量，建议您在使用流量前先订够流量包，可享受流量优惠资费。</span>
 
-            <a href="#" class="btn btn-xs btn-cuccblue">点我订购</a>
-        </div>
-    </div>
     <div class="row flow-line-chart">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="echarts" id="echarts-line-chart"></div>
-            </div>
-        </div>
+        <div class="left"></div>
+        <div class="right"></div>
     </div>
 
     <div class="row flow-timelineture" id="leftVersion">
-        <div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
-            <div class="vertical-timeline-block">
-                <div class="vertical-timeline-iconbig">
-                    4月
-                </div>
-            </div>
 
-            <div class="vertical-timeline-block" id="timeone">
-                <div class="vertical-timeline-iconm">
-                </div>
-
-                <div class="vertical-timeline-content">
-                    <div class="vertical-timeline-tou">04</div>
-                    <span>您是去出差还是旅游了呢？</span>
-                </div>
-            </div>
-
-            <div class="vertical-timeline-block" id="timetwo">
-                <div class="vertical-timeline-icons">
-                </div>
-
-                <div class="vertical-timeline-flowchao">
-                    <div class="vertical-timeline-tou">10</div>
-                    <span>您是去出差还是旅游了呢？</span>
-                </div>
-                <div class="vertical-timeline-flowchaohou">
-                    您是去出差还是旅游了呢？<span id="go-flow-dingou">流量包办理</span><span>详单查询</span>
-                </div>
-            </div>
-
-            <div class="vertical-timeline-block" id="timethree">
-                <div class="vertical-timeline-iconduanxin">
-                </div>
-
-                <div class="vertical-timeline-content">
-                    <div class="vertical-timeline-tou">16</div>
-                    <span>您是去出差还是旅游了呢？</span>
-                </div>
-            </div>
-
-            <div class="vertical-timeline-block" id="timefour">
-                <div class="vertical-timeline-iconm">
-                </div>
-
-                <div class="vertical-timeline-content">
-                    <div class="vertical-timeline-tou">26</div>
-                    <span>您是去出差还是旅游了呢？</span>
-                </div>
-            </div>
-            <div class="vertical-timeline-block">
-                <div class="vertical-timeline-iconsj">
-                </div>
-            </div>
-        </div>
     </div>
     <!--flow banli-->
     <div class="flow-cucc-dingou" style="display: none;" id="flow-dingou">
